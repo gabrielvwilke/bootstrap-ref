@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack - live 04</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Exercício de HTML e CSS</h1>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Título e texto</h2>
+            <p>Esta é uma demonstração HTML</p>
+        </section>
+        <section>
+            <div>
+                <h2>Listas</h2>
+                <div class="flex-container-start">
+                   <div>
+                        <h5>Lista Ordenada</h5>
+                        <ol>
+                            <li>Teste 1</li>
+                            <li>Teste 2</li>
+                            <li>Teste 3</li>
+                            <li>Teste 4</li>
+                            <li>Teste 5</li>
+                        </ol>
+                   </div> 
+                   <div>
+                        <h5>Lista Não Ordenada</h5>
+                        <ul>
+                            <li>Teste 1</li>
+                            <li>Teste 2</li>
+                            <li>Teste 3</li>
+                            <li>Teste 4</li>
+                            <li>Teste 5</li>
+                        </ul>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Cidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>teste</td>
+                        <td>25 anos</td>
+                        <td>Fortaleza</td>
+                    </tr>
+                    <tr>
+                        <td>teste</td>
+                        <td>25 anos</td>
+                        <td>Fortaleza</td>
+                    </tr>
+                    <tr>
+                        <td>teste</td>
+                        <td>25 anos</td>
+                        <td>Fortaleza</td>
+                    </tr>
+                    <tr>
+                        <td>teste</td>
+                        <td>25 anos</td>
+                        <td>Fortaleza</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Botões e Links</h2>
+            <a href="https://www.google.com/" class="button">OK</a>
+        </section>
+        <section>
+            <h2>Layout Flexbox</h2>
+            <div class="flex-container">
+                <div class="flex-item">Item 01</div>
+                <div class="flex-item">Item 02</div>
+                <div class="flex-item">Item 03</div>
+            </div>
+        </section>
+        <section>
+            <h2>Forms e inputs</h2>
+            <div class="card-body">
+            <form action="" method="post" class="form">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="exemplo@digital.com.br" required>
+                </div>
+                <div class="form-group">
+                    <a type="submit" class="button">Enviar</a>
+                </div>
+            </form>
+
+            <h2>Input radio</h2>
+            <form>
+                <div class="form-group">
+                    <input type="radio" name="opcao1" id="opcao1">
+                    <label for="opcao1">Opção 1</label>
+                </div>
+                <div class="form-group">
+                    <input type="radio" name="opcao2" id="opcao2">
+                    <label for="opcao2">Opção 2</label>
+                </div>
+                <div class="form-group">
+                    <input type="radio" name="opcao3" id="opcao3">
+                    <label for="opcao3">Opção 3</label>
+                </div>
+                <div class="form-group">
+                    <input type="radio" name="opcao4" id="opcao4">
+                    <label for="opcao4">Opção 4</label>
+                </div>             
+            </form>
+
+            <h2>Input de cores</h2>
+            <form>
+                <div class="form-group">
+                    <input type="color" name="color" id="color" value="#ff0000">
+                    <label for="color">Color</label>
+            </form>
+
+            <h2>Input de controle de faixa</h2>
+            <form>
+                <div class="form-group">
+                    <input type="range" min="0" max="10">
+                </div>
+            </form>
+            <h2>Input seleção de arquivos</h2>
+            <form>
+                <div class="form-group">
+                    <input type="file" name="file" id="file" accept=".pdf, .docx">
+                    <label for="file">Escolha um arquivo:</label>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+<footer>
+    <h6>@Direitos reservados.</h6>
+</footer>
+</html>

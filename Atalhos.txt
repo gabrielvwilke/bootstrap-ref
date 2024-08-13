@@ -1,0 +1,3 @@
+Atalhos
+
+ctrl + " = abre o powershell
