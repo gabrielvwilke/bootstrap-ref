@@ -1,0 +1,98 @@
+/* Estilos personalizados para Doce Maria */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Garante que o body preencha toda a altura da tela */
+    display: flex;
+    flex-direction: column;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/img1.jpeg'); /* Imagem de marca d'água */
+    background-size: cover; /* Cobre toda a área, mantendo a proporção */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat;
+    opacity: 0.6; /* Transparência de 60% na imagem de fundo */
+    z-index: -1; /* Coloca a imagem atrás de todo o conteúdo */
+}
+
+/* Garantir que o conteúdo principal ocupe todo o espaço disponível */
+.container {
+    flex: 1; /* O conteúdo principal ocupa o espaço restante da tela */
+    background: none; /* Remove qualquer fundo para que a imagem de fundo seja visível */
+}
+
+.container h2 {
+    font-size: 2rem;
+    font-style: italic;
+    color: #6d4646e4;
+    text-align: left;    
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8); /* Contorno branco suave */
+}
+
+/* Rodapé */
+footer {
+    background: none; /* Remove o fundo do rodapé para que a imagem de fundo do body seja visível */
+    padding: 10px; /* Adiciona espaçamento interno ao rodapé */
+    z-index: 1000; /* Garante que o rodapé fique acima da imagem de fundo */
+    width: 100%; /* Certifica que o rodapé ocupa toda a largura da tela */
+    display: flex; /* Usa flexbox para o layout */
+    justify-content: flex-end; /* Alinha os ícones à direita */
+    align-items: center; /* Centraliza verticalmente os ícones */
+}
+
+/* Estilo dos ícones sociais no rodapé */
+.social-icon {
+    width: 40px; /* Define o tamanho dos ícones */
+    height: 40px;
+    margin-left: 10px; /* Espaço entre os ícones */
+    transition: filter 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.social-icon:hover {
+    filter: none; /* Remove o filtro ao passar o mouse para destacar os ícones */
+}
+
+/* Logo no canto superior esquerdo */
+#logo {
+    position: absolute;
+    top: 10px; /* Adiciona um pequeno espaçamento superior */
+    left: 10px;
+    z-index: 1000; /* Garante que a logo fique acima de outros elementos */
+}
+
+.img-logo {
+    height: 500px; /* Tamanho reduzido para uma melhor visualização */
+    width: auto;
+}
+
+/* Carrossel */
+.carousel-small {
+    position: fixed;
+    bottom: 60px; /* Coloca o carrossel logo acima do rodapé */
+    left: 0;
+    right: 0;
+    width: 100%; /* Largura total da página */
+    z-index: 999;
+}
+
+.carousel-inner img {
+    max-height: 300px; /* Altura fixa e proporcional das imagens do carrossel */
+    object-fit: contain; /* Ajusta a imagem ao tamanho disponível sem cortar */
+    width: 100%;
+}
+
+
+
+
+
+
+
+
